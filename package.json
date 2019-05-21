@@ -5,6 +5,9 @@
   "main": "server/index.js",
   "dependencies": {
     "axios": "^0.16.2",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
@@ -14,7 +17,7 @@
     "redux-promise-middleware": "^4.3.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +25,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:3001",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devlemire/swag-node-shop.git"
@@ -32,5 +35,17 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/devlemire/swag-node-shop/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
